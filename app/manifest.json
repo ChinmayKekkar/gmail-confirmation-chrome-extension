@@ -1,0 +1,19 @@
+{
+    "name": "Gmail confirmation",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["background.js"]
+      }
+    ],
+    "browser_action": {
+      "default_icon":"icon.png",
+      "default_title": "Gmail confirmation"
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "permissions": ["tabs"]
+  }
